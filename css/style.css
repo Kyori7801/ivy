@@ -251,6 +251,13 @@ header:hover {
 .catergory-right {
   width: 80%;
 }
+.catergory-left-li > a {
+  font-weight: bold;
+  font-size: 16px;
+}
+.catergory-right-top {
+  width: 100%;
+}
 .catergory-right-top-item {
   flex: 1;
   padding: 0 12px;
@@ -278,6 +285,61 @@ header:hover {
   border: 1px solid #ddd;
   cursor: pointer;
   outline: none;
+}
+/* ------------------catergory-fliter------------------- */
+.catergory-filter-content {
+  height: 150px;
+  width: 100%;
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  border: #ccc solid 1px;
+  flex-direction: column;
+}
+.catergory-filter-content.block {
+  display: flex;
+}
+.catergory-filter-content-top {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  /* padding: 20px 0; */
+  gap: 8px;
+}
+.catergory-filter-content-size-choose {
+  padding: 5px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  margin: 8px;
+  font-size: 11px;
+}
+.catergory-filter-content-size-choose.choose {
+  border: #000 solid 1px;
+}
+.catergory-filter-content-color-choose {
+  padding: 5px;
+  width: 22px;
+  height: 22px;
+  border: 1px solid #fff;
+  display: inline-block;
+  box-sizing: border-box;
+  cursor: pointer;
+  margin: 0 5px;
+}
+.catergory-filter-content-color-choose.choose {
+  border: 1px solid #000;
+}
+.catergory-filter-content-bottom {
+  width: 100%;
+  display: flex;
+  gap: 16px;
+}
+.catergory-filter-content-bottom button {
+  padding: 6px 24px;
+  border: 1px solid #000;
+  background: #fff;
+  cursor: pointer;
+  margin: 0 0 15px 20px;
 }
 .catergory-right-content {
   margin-top: 20px;
@@ -314,6 +376,11 @@ header:hover {
 }
 .catergory-left-li ul {
   display: none;
+}
+.catergory-left ul li ul li {
+  color: #3333;
+  font-size: 13px;
+  padding-left: 10px;
 }
 .catergory-left-li.block ul {
   display: block;
