@@ -17,7 +17,7 @@ a {
   display: flex;
   flex-wrap: wrap;
 }
-/* header */
+/* ------------------header--------------------------*/
 
 header {
   font-family: var(--main-text-font);
@@ -718,12 +718,16 @@ header:hover {
  }
  .cart-content-right-button button:last-child{
   background-color: #000;
-  color: #fff;
   border: 1px solid #000;
  }
+ .cart-content-right-button button:last-child a{
+  color: #fff;
+  }
  .cart-content-right-button button:last-child:hover{
   background-color: #fff;
-  color:#000 ;
+ }
+ .cart-content-right-button button:last-child a:hover{
+  color: #000;
  }
  .cart-content-right-login{
   margin-top: 20px;
@@ -734,3 +738,412 @@ header:hover {
   color: #333;
 
  }
+
+/* -------------------delivery------------------------ */
+.delivery{
+  padding: 100px;
+}
+.delivery-top-address{
+   border: 1px solid #0db7ea;
+}
+.delivery-top-address i{
+  color: #0db7ea;
+}
+.delivery-content-left{
+  width: 60%;
+  padding-right: 12px;
+}
+.delivery-content-left p{
+  font-family: var(--main-text-font);
+  font-size: 14px;
+  
+}
+.delivery-content-left>p{
+  font-weight: bold;
+  margin-bottom: 6px ;
+}
+.delivery-content-left label{
+  font-family: var(--main-text-font);
+  font-size: 14px;
+  margin-bottom: 6px;
+  display: block;
+}
+.delivery-content-left-login i{
+  font-size: 14px;
+  padding-right: 12px;
+}
+.delivery-content-left-khachle{
+  margin: 12px 0;
+}
+.delivery-content-left-khachle input{
+  margin-right: 12px;
+}
+.delivery-content-left-sign{
+  margin-bottom: 30px;
+}
+.delivery-content-left-sign input{
+margin-right: 12px;
+}
+.delivery-content-left-input{
+  justify-content: space-between;
+}
+.delivery-content-left-input-item{
+  width: calc(50% - 12px);
+  margin-bottom: 12px;
+}
+.delivery-content-left-input-item input{
+  width: 100%;
+  height: 35px;
+  border: 1px solid #ddd;
+  padding-left: 6px;
+}
+.delivery-content-left-input-bottom input{
+  width: 100%;
+  height: 35px;
+  border: 1px solid #ddd;
+  padding-left: 6px;
+}
+.delivery-content-left-button{
+  justify-content: space-between;
+  padding-top: 20px;
+}
+.delivery-content-left-button button{
+  height: 35px;
+  border: 2px solid #000;
+  padding: 6px 12px;
+  cursor: pointer;
+  margin-left:150px;
+}
+.delivery-content-left-button button:hover{
+  background-color: black;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+.delivery-content-right{
+  width: 40%;
+  padding-left: 12px;
+  border-left:2px solid #dddddd ;
+  height: auto;
+}
+.delivery-content-right table{
+  width: 100%;
+  font-family: var(--main-text-font);
+  font-size: 14px;
+  text-align:center ;
+}
+
+.delivery-content-left-button p{
+  display: inline-block;
+  font-family: var(--main-text-font);
+  font-size: 14px;
+}
+.delivery-content-right table tr th{
+  border-bottom: #dddddd solid 2px;
+  padding-bottom: 12px;
+}
+.delivery-content-right table tr th:first-child{
+  text-align: start;
+}
+.delivery-content-right table tr:nth-child(3) td {
+  border-top: 2px solid #dddddd ;
+  padding-top: 12px ;
+}
+.delivery-content-right table tr td:first-child{
+text-align: start;
+}
+.delivery-content-right table tr td:last-child{
+  text-align: end;
+}
+.container{
+  border-bottom: 2px solid black;
+  padding-bottom: 100px;
+}
+/*--------------------payment ------------------------ */
+.payment{
+  padding: 100px;
+}
+.payment-top-payment{
+  border-color: #0db7ea;
+}
+.payment-top-payment i{
+  color: #0db7ea;
+}
+.payment-content-left{
+  width: 60%;
+}
+.payment-content-left p,label{
+  font-size: 14px;
+  font-family: var(--main-text-font);
+}
+
+.payment-content-right{
+  width: 40%;
+  border-left:2px solid #ddd ;
+  padding-left: 12px;
+}
+.payment-content-right-button{
+  display: flex;
+  padding:12px 0 ;
+  border-bottom: 1px dashed #dddddd;
+}
+.payment-content-right-button input{
+  height: 35px;
+  width: 200px;
+  margin-right: 100px;
+  padding-left: 12px;
+}
+.payment-content-right-button button{
+  height: 35px;
+  width: 100px;
+  background-color: #000;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.payment-content-right-mnv{
+  margin: 20px 0;
+}
+.payment-content-right-mnv select{
+  height: 30px;
+  width: 100%;
+  color: #cccccc;
+  padding-left: 12px;
+}
+.payment-content-right-payment{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+.payment-content-right-payment button{
+  height: 35px;
+  padding: 0 20px;
+  color: #000;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 1px solid #000;
+}
+.payment-content-right-payment button:hover{
+  background-color: black;
+  color: #fff;
+}
+
+
+
+/* ------------------tablet ngang trở xuống  ----------------*/
+@media (max-width: 1024px) {
+  header {
+    padding: 8px 24px;
+  }
+
+  .product,
+  .catergory,
+  .cart {
+    padding: 90px 24px 60px;
+  }
+}
+
+/* tablet dọc / mobile lớn */
+@media (max-width: 768px) {
+  header {
+    padding: 8px 12px;
+    height: auto;
+  }
+
+  .logo img {
+    max-width: 120px;
+  }
+
+
+  .menu {
+    display: none;
+  }
+
+  .others li {
+    padding: 0 6px;
+  }
+
+  /*--------------------- product -----------------*/
+  .product {
+    padding: 80px 16px 40px;
+  }
+
+  .product-top {
+    flex-wrap: wrap;
+    row-gap: 4px;
+  }
+
+  .product-content-left,
+  .product-content-right {
+    width: 100%;
+    padding: 0;
+  }
+
+  .product-content-left-big-img {
+    width: 100%;
+    padding-right: 0;
+  }
+
+  .product-content-left-small-img {
+    width: 100%;
+    display: flex;
+    margin-top: 8px;
+  }
+
+  .product-content-left-small-img img {
+    width: 25%;
+  }
+
+  .product-content-right-button {
+    flex-direction: column;
+  }
+
+  .product-content-right-button button {
+    width: 100%;
+    margin-bottom: 8px;
+  }
+
+  /*-------------catergory------------ */
+  .catergory {
+    padding: 80px 16px 40px;
+  }
+
+  .catergory-left,
+  .catergory-right {
+    width: 100%;
+  }
+
+  .catergory-left {
+    margin-bottom: 16px;
+  }
+
+  /*---------------cart------------------- */
+  .cart {
+    padding: 80px 16px 40px;
+  }
+
+  .cart-top {
+    width: 100%;
+  }
+
+  .cart-content-left,
+  .cart-content-right {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 0;
+    border-left: none;
+    margin-top: 16px;
+  }
+    /*---------------delivery------------------- */
+  .delivery {
+    padding: 80px 16px 40px;
+  }
+
+  .delivery-content {
+    flex-direction: column;
+  }
+
+  .delivery-content-left,
+  .delivery-content-right {
+    width: 100%;
+    padding: 0;
+  }
+
+  .delivery-content-right {
+    border-left: none;
+    margin-top: 16px;
+  }
+
+  .delivery-content-left-input {
+    flex-direction: column;
+  }
+
+  .delivery-content-left-input-item {
+    width: 100%;
+  }
+
+  .delivery-content-left-button {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .delivery-content-left-button a {
+    margin-bottom: 4px;
+  }
+
+  /*---------------payment------------------- */
+  .payment {
+    padding: 80px 16px 40px;
+  }
+
+  .payment-content {
+    flex-direction: column;
+  }
+
+  .payment-content-left,
+  .payment-content-right {
+    width: 100%;
+  }
+
+  .payment-content-right {
+    margin-top: 16px;
+    padding-left: 0;
+    border-left: none;
+  }
+
+  .payment-content-right-button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .payment-content-right-button input {
+    flex: 1;
+  }
+
+  .payment-content-right-payment {
+    margin-top: 24px;
+  }
+
+
+  .cart-content-left table td:first-child img {
+    width: 90px;
+  }
+
+  /* -------------footer----------- */
+  .footer-top {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .footer-top > li:not(:last-child)::after {
+    display: none;
+  }
+
+  .footer-bottom {
+    padding: 16px 0;
+  }
+}
+
+/* mobile nhỏ  */
+@media (max-width: 480px) {
+  .product-content-right-name h1 {
+    font-size: 14px;
+  }
+
+  .product-content-right-price p {
+    font-size: 14px;
+  }
+
+  .cart-content-left table th,
+  .cart-content-left table td {
+    font-size: 12px;
+    padding: 8px 2px;
+  }
+
+  .cart-content-right table td,
+  .cart-content-right table th {
+    font-size: 12px;
+  }
+}

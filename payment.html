@@ -128,85 +128,72 @@
             <li><a class="fa-solid fa-bag-shopping" href=""></a></li>
         </div>
     </header>
-    <!--------------------------- cart ---------------------------->
-    <section class="cart">
-        <div class="container-top">
+    <!------------------------ payment ------------------------->
+    <section class="payment">
+        <div class="container">
             <div class="cart-top-wrap">
                 <div class="cart-top">
-                    <div class="cart-top-cart cart-top-item"><i class="fa-solid fa-cart-shopping "></i></div>
+                    <div class="cart-top-address cart-top-item"><i class="fa-solid fa-cart-shopping "></i></div>
 
-                    <div class="cart-top-address cart-top-item"><i class="fa-solid fa-location-dot "></i></div>
+                    <div class="payment-top-address cart-top-item"><i class="fa-solid fa-location-dot "></i></div>
 
-                    <div class="cart-top-payment  cart-top-item"><i class="fa-solid fa-credit-card "></i></div>
+                    <div class="payment-top-payment  cart-top-item"><i class="fa-solid fa-credit-card "></i></div>
                 </div>
+            </div>
+            <div class="payment-content row">
+                <div class="payment-content-left">
+                    <div class="payment-content-left-method-delivery">
+                        <p style="font-weight: bold;">Phương thức giao hàng</p>
+
+                        <div class="payment-content-left-method-delivery-item">
+                            <input type="radio">
+                            <label for="">Giao hàng chuyển phát nhanh</label>
+                        </div>
+                    </div>
+                    <div class="payment-content-left-method-payment">
+                        <p style="font-weight: bold;">Phương thức thanh toán</p>
+                        <p>Mọi thông tin giao dịch đều được mã hóa. Thông tin thẻ tín dụng sẽ không bao giờ được lưu lại
+                        </p>
+                        <div class="payment-content-left-method-payment-item">
+                            <input type="radio" name="method-payment">
+                            <label for="">Thanh Toán bằng thẻ tín dụng(One Pay)</label>
+                        </div>
+                        <div class="payment-content-left-method-payment-item-img"><img src="img/visa.png" alt=""></div>
+                        <div class="payment-content-left-method-payment-item">
+                            <input type="radio" name="method-payment">
+                            <label for="">Thanh Toán bằng thẻ ATM </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="payment-content-right">
+                    <div class="payment-content-right-button">
+                        <input type="text" placeholder="Mã giảm giá/Quà tặng">
+                        <button><i class="fas fa-check"></i></button>
+                    </div>
+                    <div class="payment-content-right-button">
+                        <input type="text" placeholder="Mã cộng tác viên">
+                        <button><i class="fas fa-check"></i></button>
+                    </div>
+                    <div class="payment-content-right-mnv">
+                        <select name="" id="">
+                            <option value="">Chọn mã nhân viên thân thiết</option>
+                            <option value="">D123</option>
+                            <option value="">A145</option>
+                            <option value="">E543</option>
+                            <option value="">G351</option>
+                        </select>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="payment-content-right-payment">
+                <button>TIẾP TỤC THANH TOÁN</button>
             </div>
         </div>
-        <div class="container row">
-            <div class="cart-content-left">
-                <table>
-                    <tr>
-                        <th>Sản phẩm</th>
-                        <th>Tên sản phẩm</th>
-                        <th>Màu</th>
-                        <th>Size</th>
-                        <th>SL</th>
-                        <th>Thành Tiền</th>
-                        <th>Xóa</th>
-                    </tr>
-                    <tr id="cartRow">
-                        <td><img src="" alt=""></td>
-                        <td></td>
-                        <td><img src="img/spcolor.png" alt="" style="width: 40px; height: 40px;"></td>
-                        <td>L</td>
-                        <td><input type="number" value="1" min="1"></td>
-                        <td> ></td>
-                        <td><span class="cart-remove">X</span></td>
-                    </tr>
-
-                </table>
-            </div>
-            <div class="cart-content-right">
-                <table>
-                    <tr>
-                        <th colspan="2">TỔNG TIỀN GIỎ HÀNG</th>
-                    </tr>
-                    <tr>
-                        <td>TỔNG SẢN PHẨM</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>TỔNG TIỀN HÀNG</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>THÀNH TIỀN</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>Tạm Tính</td>
-                        <td style="color: black;font-weight: bold;"></td>
-                    </tr>
-                </table>
-                <div class="cart-content-right-text">
-                    <p>Bạn sẽ được miễn phí khi đơn hàng của bạn có tổng giá trị trên 2.000.000đ</p>
-                </div>
-                <div class="cart-content-right-button">
-                    <button><a href="category.html">TIẾP TỤC MUA SẮM</a></button>
-                    <Button><a href="delivery.html">THANH TOÁN</a></Button>
-                </div>
-                <div class="cart-content-right-login">
-                    <p>Tài Khoản</p><br>
-                    <p>Hãy <a href="">Đăng nhập</a> tài khoản của bạn để tích điểm thành viên</p>
-                </div>
-            </div>
-        </div>
-
     </section>
 
-
-
-    <!---------------------------- footer ----------------------->
-
+    <!--------------------- footer ----------------------->
     <section class="app-container">
         <p>Tải ứng dụng IVY moda</p>
         <div class="app-goole">

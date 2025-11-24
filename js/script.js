@@ -214,4 +214,44 @@ function updateCartSummary(totalQty, totalMoney) {
   }
 }
 
+// --------------------------delivery-----------------
+(function () {
+  const deliveryTable = document.querySelector(".delivery-content-right table");
+  if (!deliveryTable) return;
+  const cart = loadCart();
+  if (!cart || cart.length === 0) {
+    return;
+  }
+  const item = cart[0];
+  const productRow = deliveryTable.rows[1];
+  const totalRow = deliveryTable.rows[2];
+  const totalGoodsRow = deliveryTable.rows[3];
+
+  if (!productRow) return;
+
+  const subtotal = item.price * item.qty;
+
+
+  if (productRow.cells[0]) {
+    productRow.cells[0].innerText = item.name;
+  }
+
+  if (productRow.cells[2]) {
+    productRow.cells[2].innerText = item.qty;
+  }
+
+  if (productRow.cells[3]) {
+    productRow.cells[3].innerHTML =
+      `<p>${subtotal.toLocaleString("vi-VN")} <sup>đ</sup></p>`;
+  }
+
+  [totalRow, totalGoodsRow].forEach(function (row) {
+    if (row && row.cells[1]) {
+      row.cells[1].innerHTML =
+        `${subtotal.toLocaleString("vi-VN")} <sup>đ</sup>`;
+    }
+  });
+})();
+ console.log(cart(0));
+
 
